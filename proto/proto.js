@@ -1,3 +1,5 @@
+window.onload = function () {
+
 (function() {
 	
 	function loadjscssfile(filename, filetype){
@@ -188,3 +190,5 @@
 		document.body.appendChild(vpaidFrame)	
 	} 
 }());
+
+}
