@@ -1,0 +1,51 @@
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+.vr-con { width:100%; }
+}
+  
+
+@media only screen and  (orientation : landscape) { 
+.vr-con { width:50%; }
+}
+  
+@-webkit-keyframes mymove {
+    0%   { bottom: 0px; }
+    1%   { bottom: 0px; display:block; }
+  95%  { bottom: -80%; display:block;}
+  100% { display:none; bottom: -80%;  }
+}
+
+@keyframes mymove {
+    0%   { bottom:0px;  }
+    1%   { bottom: 0px; display:block; }
+  95%  { bottom: -80%; display:block;}
+  100% { display:none; bottom: -80%;  }
+}
+
+.hideanim {
+  -webkit-animation: mymove 3s 1;
+    /*-webkit-animation-delay: 6s; */
+    animation: mymove 3s 1;
+   /* animation-delay: 6s;*/
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+  .vr-con { 
+    position:fixed;
+  z-index: 999;
+  border-radius: 4px;
+  background-color: #ccc;
+  display: none;
+  bottom: 0px;
+  padding: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  
+  }
+
+.vr-ad { border:0px solid #fff; background-color:#000; border-radius:4px; position:relative; margin:0px auto;  overflow:auto; height:90%; color::#fff;}
+
+.vr-con img { width:100%; display:block; }
