@@ -1,5 +1,7 @@
-//window.onload = function () {
-document.addEventListener("DOMContentLoaded", function(event) {
+//window.onload = function() {
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+
 
     (function() {
 
@@ -18,9 +20,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 document.getElementsByTagName("head")[0].appendChild(fileref)
         }
 
-        loadjscssfile("proto.css", "css")
-		 loadjscssfile("http://vidroll-platform-w9iqwmtitm.elasticbeanstalk.com/LiveRail.AdManager-1.0.js", "js")
-
+        loadjscssfile("proto.css", "css")	
+		
 
         var videoWrapper = document.createElement('div')
         videoWrapper.id = 'videoWrapper'
@@ -126,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
                     var baseURL = "http://vidroll-platform-w9iqwmtitm.elasticbeanstalk.com/ad/" //"http://vidroll-platform-w9iqwmtitm.elasticbeanstalk.com/ad/"
                         // adImg.src = baseURL + encodedURL
-                    adImg.src = 'https://s3.amazonaws.com/mobile-video-ads/me.mp4.gif';
+                    adImg.src = 'https://s3.amazonaws.com/mobile-video-ads/rbx2.15fps.gif';
                     //adImg.src = adURL//vrGif;
 
 
@@ -193,5 +194,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     }());
 
-    //}
+    // executes when complete page is fully loaded, including all frames, objects and images
+    //alert("window is loaded");
+//}
+
 });
