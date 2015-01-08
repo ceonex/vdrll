@@ -1,4 +1,6 @@
-window.onload = function () {
+//window.onload = function () {
+
+document.addEventListener("DOMContentLoaded", function(event) { 
 
 (function() {
 	
@@ -191,4 +193,5 @@ window.onload = function () {
 	} 
 }());
 
-}
+//}
+});
